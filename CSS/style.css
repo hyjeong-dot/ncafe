@@ -1,0 +1,56 @@
+/* == heading == */
+:root{
+    --heading-color: #494949;
+    --heading-size-1: 18px;
+    --heading-size-2: 14px;
+    --heading-size-3: 14px;  
+    --heading-weight-1: bold;
+    --heading-weight-2: normal;
+}
+/* .heading{    
+    color: #494949;
+} */
+/* .heading\:1, 
+.heading\:2,
+.heading\:3,
+.heading\:4{
+    color: #494949;
+} */
+.heading\:1{
+    font-size: var(--heading-size-1);
+    font-weight: var(--heading-weight-1);
+    color: var(--heading-color);
+}
+.heading\:2{
+    font-size: var(--heading-size-2);
+    font-weight: var(--heading-weight-2);
+    color: var(--heading-color);
+}
+.heading\:3{
+    font-size: var(--heading-size-3);
+    font-weight: var(--heading-weight-2);
+    color: var(--heading-color);
+}
+
+.n-icon::before{
+    font-family: "Material Symbols Outlined";
+    /* content: "\e87d"; */
+     width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon\:favorite::before{
+    content: "\e87d";
+}
+
+.icon\:favorite-red::before{
+    content: "\e87d";
+    color: red;
+}
+
+.icon\:settings::before{
+    content: "\e8b8";
+}
