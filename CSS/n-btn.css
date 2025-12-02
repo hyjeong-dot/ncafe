@@ -1,37 +1,49 @@
-@import url(n-icon.css);
-@import url(n-btn.css);
 .n-btn{
-    /* 버튼에서 변화를 잘수 있는 옵션들을 변수로 선언 */
-    background-color: #b8672e;
+    /* ----------상수변수-------------- */
+    /* 버튼의 높이 */
+    /* btn-height : 32px, 40px, 56px, 96px, 136px */
+    --btn-height-1: 32px;
+    --btn-height-2: 40px;
+    --btn-height-3: 56px;
+    --btn-height-4: 96px;
+    --btn-height-5: 136px;
+   
+    --btn-padding-1: 0 12px;
+    --btn-padding-2: 0 16px;
+    --btn-padding-3: 0 24px;
+    --btn-padding-4: 0 48px;
+    --btn-padding-5: 0 64px;
+
+    --btn-weight-1 100;
+    --btn-weight-2 200;
+    --btn-weight-3 300;
+    --btn-weight-4 400;
+    --btn-weight-5 500;
+
+    /* --------------변수---------------- */
+    --btn-color: var(--color-main-2);
+    --btn-size: var(--icon-size-1);
+    --btn-weight: 500;
+    --btn-height: var(--btn-height-2);
+    --btn-padding: var(--btn-padding-2);
+    --btn-fill: 1;
 }
 
-@media (prefers-color-scheme: dark) {
-    /* 다크모드일 때 버튼의 색상을 변경 */
+@media (prefers-color-scheme: dark){
     .n-btn{
-        --background-color: var(--color-base-1);
-        --color: var(--color-main-3);
-
+        --btn-color: var(--color-main-1);
     }
 }
-
 .n-btn{
-    /* 실제로 버튼 정의를 위한 스타일 코드를 작성 */
-    
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-
-/* 옵션사항 */
-    height: 40px;
-    line-height: 20px;
-    padding: 0 16px;
-    font-size: 14px;
-    border-radius: 999px;
-    background-color: var(--color-main-3);
-    color: var(--color-base-1);
-    
-
-
-
+    /* boxing*/
+    height: var(--btn-height);
+    padding: var(--btn-padding);
+    border-radius: 40px;  
+    border: 0px;
+    background-color: var(--btn-color);
+    /* content */
+    font-size: var(--btn-size);
+    font-weight: var(--btn-weight);
+    color:var(--color-base-1);
+    font-variation-settings: 'FILL' var(--btn-fill);
 }
