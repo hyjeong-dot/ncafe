@@ -1,0 +1,56 @@
+.n-icon{
+    --icon-type: "";
+    --icon-color:var(--color-base-9);
+    --icon-size: var(--icon-size-2);
+    --icon-weight: var(--icon-weight);
+}
+
+.n-icon::before{
+    /* content: "\e87d"; */
+    /* boxing */
+     width: 24px;
+    height: 24px;
+
+    /* layout */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    /* content */
+    font-family: "Material Symbols Outlined";
+    font-weight: var(--icon-weight);
+    font-size: var(--icon-size);
+    color: var(--icon-color);
+}
+
+.icon\:favorite::before{
+    --icon-type: "\e87d";
+}
+
+/* .icon\:favorite-red::before{
+    content: "\e87d";
+    color: red;
+} */
+.icon\:settings::before{
+    --icon-type: "\e8b8";
+}
+
+.icon-color\:main-1::before{
+    color: var(--color-main-1);
+}
+.icon-color\:main-2::before{
+    color: var(--color-main-2);
+}
+.icon-color\:main-3::before{
+    color: var(--color-main-3);
+}
+
+.icon-size\:1::before{
+    --icon-size: var(--icon-size-1);
+}
+.icon-size\:2::before{
+    --icon-size: var(--icon-size-2);
+}
+.icon-size\:3::before{
+    --icon-size: var(--icon-size-3);
+}
