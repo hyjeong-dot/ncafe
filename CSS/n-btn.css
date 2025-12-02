@@ -1,0 +1,37 @@
+@import url(n-icon.css);
+@import url(n-btn.css);
+.n-btn{
+    /* 버튼에서 변화를 잘수 있는 옵션들을 변수로 선언 */
+    background-color: #b8672e;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* 다크모드일 때 버튼의 색상을 변경 */
+    .n-btn{
+        --background-color: var(--color-base-1);
+        --color: var(--color-main-3);
+
+    }
+}
+
+.n-btn{
+    /* 실제로 버튼 정의를 위한 스타일 코드를 작성 */
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+/* 옵션사항 */
+    height: 40px;
+    line-height: 20px;
+    padding: 0 16px;
+    font-size: 14px;
+    border-radius: 999px;
+    background-color: var(--color-main-3);
+    color: var(--color-base-1);
+    
+
+
+
+}
