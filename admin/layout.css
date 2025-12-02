@@ -90,7 +90,13 @@ body{
     width: 100%; /* 고정크기(cm, mm / px), 가변크기(em, rem, %, vw, vh)*/
     height:100%;
     display: flex;
-    flex-direction: column;      
+    flex-direction: column;   
+}
+
+@media (prefers-color-scheme: dark) {
+    #root{
+        background-color: #121212;
+    }
 }
 /* 공통 분모는 위에 */
 /* .header, 
