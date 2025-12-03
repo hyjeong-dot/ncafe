@@ -8,21 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="n-btn.css">
     <style>
-        .n-btn:first-child{
+        /* .n-btn:first-child{
             border: 2px solid #ff0000;
         }
         .n-btn:hover{
-            background-color: #00ff00;
+            background-color: #00ff00; */
             /* padding: 30px; */
-
+/* 
             transform: rotateZ(45deg);
+        } */
+
+        /* .n-btn:disabled{
+            border: blue;
         }
+        
+        .n-btn:focus{
+            background-color: #ffff00;
+        } */
     </style>
 </head>
 <body>
-    <button class="n-btn">버튼</button>
-    <button class="n-btn">버튼</button>
-    <button class="n-btn">버튼</button>
-    <button class="n-btn">버튼</button>
+    <button class="n-btn">enabled</button>
+    <button class="n-btn btn-state:disabled" disabled>disabled</button>
+    <button class="n-btn btn-state:hover">hover</button>
+    <button class="n-btn btn-state:focus">focus</button>
+    <button class="n-btn btn-state:active">pressed</button>
+
 </body>
 </html>
