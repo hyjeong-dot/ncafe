@@ -14,11 +14,11 @@
     --btn-padding-4: 0 48px;
     --btn-padding-5: 0 64px;
 
-    --btn-weight-1 100;
-    --btn-weight-2 200;
-    --btn-weight-3 300;
-    --btn-weight-4 400;
-    --btn-weight-5 500;
+    --btn-weight-1: 100;
+    --btn-weight-2: 200;
+    --btn-weight-3: 300;
+    --btn-weight-4: 400;
+    --btn-weight-5: 500;
 
     /* --------------변수---------------- */
     --btn-color: var(--color-main-2);
@@ -36,14 +36,19 @@
 }
 .n-btn{
     /* boxing*/
-    height: var(--btn-height);
-    padding: var(--btn-padding);
+    height: 40px;
+    padding: 0 16px;
     border-radius: 40px;  
     border: 0px;
     background-color: var(--btn-color);
     /* content */
-    font-size: var(--btn-size);
-    font-weight: var(--btn-weight);
+    font-size: var(--icon-size-1);
+    font-weight: 400;
     color:var(--color-base-1);
-    font-variation-settings: 'FILL' var(--btn-fill);
+    font-variation-settings: 'FILL' 1;
+
+    /* effect */
+    transition: background-color 3s ease, 
+    padding 3s ease,
+    transform 3s ease;
 }
