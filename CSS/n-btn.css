@@ -40,26 +40,48 @@
 /* 상태 별 속성 */
 
 .n-btn:disabled{
-    background-color: rgba(148, 73, 19, 0.1);
+    background-color: color-mix(in srgb, var(--color-main-2), transparent 90%);
     color: rgba(29, 27, 32, 0.38);
 }
 
 .n-btn:hover{
-    background-color: rgba(148, 73, 19, 0.92);
+    background-color: color-mix(in srgb, var(--color-main-2), transparent 8%);
 
 }
 
 .n-btn:focus{
-    background-color: rgba(148, 73, 19, 0.9);
-    /* background-color: color-mix(in srgb, var(--color-main-2), transparent 90%); */
+    /* background-color: rgba(148, 73, 19, 0.9); */
+    background-color: color-mix(in srgb, var(--color-main-2), transparent 10%);
     outline-offset: 3px;
     outline: 3px solid var(--btn-color);
 
 }
 
 .n-btn:active{
-    background-color: rgba(148, 73, 19, 0.92);
+    background-color: color-mix(in srgb, var(--color-main-2), transparent 8%);
     border-radius: 8px;
 }
 
 /* class 별 속성 */
+.btn-state\:disabled{
+    background-color: color-mix(in srgb, var(--color-main-2), transparent 90%);
+    color: rgba(29, 27, 32, 0.38);
+}
+
+.btn-state\:hover{
+    background-color: color-mix(in srgb, var(--color-main-2), transparent 8%);
+
+}
+
+.btn-state\:focus{
+    /* background-color: rgba(148, 73, 19, 0.9); */
+    background-color: color-mix(in srgb, var(--color-main-2), transparent 10%);
+    outline-offset: 3px;
+    outline: 3px solid var(--btn-color);
+
+}
+
+.btn-state\:active{
+    background-color: color-mix(in srgb, var(--color-main-2), transparent 8%);
+    border-radius: 8px;
+}
